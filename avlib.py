@@ -1,5 +1,5 @@
 
-from os import write
+import os
 import sys
 from termcolor import colored
 
@@ -44,7 +44,8 @@ def print_dict_to_cmd(inp_dict):
       print("Key : " + key + " entspricht " + value)
 
 
-
+def generate_avpdf(configfile, templatefile, outputdir):
+  os.system("cd "+str(outputdir)+" && pdflatex --jobname="+jobname+" "+str(templatefile)+" && rm *.aux *.log")
 
 def write_dict_to_configfile(inputdict, outputfile):
   #datei leeren
