@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 VERSION = '0.0.1' 
 DESCRIPTION = 'avlib'
-LONG_DESCRIPTION = 'Libary zum erstellen eines Arbeitsvertrages. Benötigt TeXlive installation."
+LONG_DESCRIPTION = 'Libary zum erstellen eines Arbeitsvertrages. Benötigt TeXlive installation.'
 
 setup(
         name="avlib", 
